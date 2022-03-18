@@ -53,7 +53,7 @@ public class ScoreService {
 		double avg = sum / movie.getScores().size();
 		
 		movie.setScore(avg);
-		movie.getScores().size();
+		movie.setCount(movie.getScores().size());
 		
 		movie = movieRepository.saveAndFlush(movie);
 		
